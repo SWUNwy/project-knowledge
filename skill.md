@@ -1,5 +1,5 @@
 ---
-name: "project-analyzer"
+name: "project-knowledge"
 description: "自动分析任意工程项目并生成完整的 .claude/knowledge/ 知识库目录结构（INDEX.md + points.md + term-mapping.md + kbase/*.md）。当用户提到「建立知识库」、「初始化 knowledge」、「分析项目架构」、「生成知识目录」、「整理开发规范」时触发。支持指定目标路径或分析当前工作目录。"
 ---
 
@@ -15,7 +15,7 @@ description: "自动分析任意工程项目并生成完整的 .claude/knowledge
 
 ## 设计理念
 
-基于 多个工程项目 项目的成功实践，提取出的可复用知识库构建规范：
+基于多个工程项目的成功实践，提取出的可复用知识库构建规范：
 
 1. **语义导航 + 精确检索** 双路召回机制
 2. **领域语言统一** 通过术语映射表
@@ -380,7 +380,7 @@ knowledge/
 
 ---
 
-*由 knowledge-builder 于 {YYYY-MM-DD} 自动生成*
+*由 Project Knowledge 于 {YYYY-MM-DD} 自动生成*
 ```
 
 ### 5.2 生成 points.md
@@ -513,7 +513,7 @@ knowledge/
 
 ---
 
-*由 knowledge-builder 于 {YYYY-MM-DD} 自动生成*
+*由 Project Knowledge 于 {YYYY-MM-DD} 自动生成*
 ```
 
 ### 5.5 生成 kbase/api-design.md
@@ -581,7 +581,7 @@ API 设计知识文档，从 L2 路由扫描 + L3 采样生成。
 
 ---
 
-*由 knowledge-builder 于 {YYYY-MM-DD} 自动生成*
+*由 Project Knowledge 于 {YYYY-MM-DD} 自动生成*
 ```
 
 ### 5.6 生成 kbase/database.md
@@ -627,7 +627,7 @@ API 设计知识文档，从 L2 路由扫描 + L3 采样生成。
 
 ---
 
-*由 knowledge-builder 于 {YYYY-MM-DD} 自动生成*
+*由 Project Knowledge 于 {YYYY-MM-DD} 自动生成*
 ```
 
 ### 5.7 生成 kbase/frontend.md（如适用）
@@ -655,7 +655,7 @@ API 设计知识文档，从 L2 路由扫描 + L3 采样生成。
 
 ---
 
-*由 knowledge-builder 于 {YYYY-MM-DD} 自动生成*
+*由 Project Knowledge 于 {YYYY-MM-DD} 自动生成*
 ```
 
 ---
@@ -706,7 +706,7 @@ API 设计知识文档，从 L2 路由扫描 + L3 采样生成。
 
 3. **不覆盖用户修改**
    - 如果生成后发现目标文件已有用户自定义内容，只追加不覆盖
-   - 在文件头部的 `*由 knowledge-builder 自动生成*` 标记改为 `*由 knowledge-builder 初始生成，后续有手动修改*`
+   - 在文件头部的 `*由 Project Knowledge 自动生成*` 标记改为 `*由 Project Knowledge 初始生成，后续有手动修改*`
 
 4. **可配置化**
    - 支持自定义实体类型列表
