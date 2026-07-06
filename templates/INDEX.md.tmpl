@@ -16,7 +16,8 @@ knowledge/
     ├── architecture.md    # Architecture knowledge
     ├── api-design.md      # API design knowledge
     ├── database.md        # Database knowledge
-    └── frontend.md        # Frontend knowledge
+    ├── frontend.md        # Frontend knowledge
+    └── workflow.md        # Development workflow (if applicable)
 ```
 
 ## Dual-Recall Mechanism
@@ -67,6 +68,13 @@ knowledge/
 | State Management | State architecture and data flow |
 | Performance | Optimization patterns and conventions |
 
+### Development Workflow (workflow.md)
+| Topic | Description |
+|-------|-------------|
+| Quick Start | Install, dev, build, test commands |
+| Environment Variables | Required vars, defaults, sources |
+| Deployment | Environments, methods, triggers |
+
 ## Knowledge Recall Triggers
 
 | Keyword | Target |
@@ -77,8 +85,19 @@ knowledge/
 | architecture, directory, structure | architecture.md |
 | project overview, what is this, who is it for | architecture.md (§0) |
 | implementation status, completeness, known limitations | architecture.md (§5) |
+| development, start, build, test, deploy, env vars | workflow.md |
 | business term, entity, domain | term-mapping.md |
 | knowledge point, fact, note | points.md |
+
+---
+
+## Reverse Index
+
+File-to-knowledge reverse mapping — look up prerequisite knowledge before modifying a file:
+
+| File Path | Prerequisite Knowledge |
+|-----------|----------------------|
+| {file path} | {reference keywords} |
 
 ---
 

@@ -29,8 +29,9 @@
 | Check | Rule | How to Verify |
 |-------|------|---------------|
 | □ 2.1 | Contains knowledge structure tree | Grep for "```" block with `knowledge/` |
-| □ 2.2 | Contains recall trigger table (≥4 entries) | Grep for `|.*→.*\|` keyword mapping rows |
+| □ 2.2 | Contains recall trigger table (≥6 entries) | Grep for `|.*→.*\|` keyword mapping rows |
 | □ 2.3 | All referenced files exist | For each `{file}` in trigger table, check file exists |
+| □ 2.4 | Contains reverse index table (≥3 entries) | Grep for `\| File Path.*Prerequisite Knowledge` |
 
 ### points.md Content
 | Check | Rule | How to Verify |
@@ -59,6 +60,9 @@
 | □ 5.2 | API doc has route conventions section | Grep for `Route` |
 | □ 5.3 | API doc has request/response format section | Grep for `Response` |
 | □ 5.4 | conformance-test.sh passes with zero failures | Run `./tests/conformance-test.sh .` |
+| □ 5.5 | `kbase/workflow.md` exists (if applicable) | File check |
+| □ 5.6 | workflow doc has quick start table | Grep for `\| Step.*Command.*Notes \|` |
+| □ 5.7 | workflow doc has env var table | Grep for `\| Variable.*Required.*Default` |
 
 ---
 

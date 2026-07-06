@@ -53,7 +53,8 @@ knowledge/
 - `{doc-name}` — Human readable name (e.g., "Architecture Knowledge")
 - `{doc-file}` — File name (e.g., `architecture.md`)
 - `{topic}/{description}` — One row per major section in the document
-- `{keyword}/{file}` — Minimum 6 trigger entries (including architecture overview and implementation status)
+- `{keyword}/{file}` — Minimum 6 trigger entries (including architecture overview, implementation status, and workflow)
+- Reverse index table with ≥3 file→knowledge mappings
 
 ---
 
@@ -203,6 +204,21 @@ knowledge/
 {state management description}
 ```
 ---
+
+### workflow.md.tmpl
+```markdown
+# Development Workflow
+
+## Quick Start
+| Step | Command | Notes |
+|------|---------|-------|
+
+## Environment Variables
+| Variable | Required | Default | Description | Source |
+
+## Deployment
+| Environment | Method | Trigger | Artifact |
+```
 
 ## Template Rendering Rules
 
