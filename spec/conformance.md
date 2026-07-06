@@ -37,8 +37,9 @@
 |-------|------|---------------|
 | □ 3.1 | ≥3 knowledge points | Count `### KP-` headers |
 | □ 3.2 | Each point has Keywords and Fact fields | Grep for `| \*\*Keywords\*\*` and `| \*\*Fact\*\*` |
-| □ 3.3 | At least 1 code location point (KP-001~009) | Check KP numbering range |
-| □ 3.4 | At least 1 business term point (KP-010~019) | Check KP numbering range |
+| □ 3.3 | At least 1 project overview point (KP-001~003) | Check KP numbering range |
+| □ 3.4 | At least 1 code location point (KP-004~012) | Check KP numbering range |
+| □ 3.5 | At least 1 business term point (KP-013~022) | Check KP numbering range |
 
 ### term-mapping.md Content
 | Check | Rule | How to Verify |

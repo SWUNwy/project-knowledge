@@ -35,6 +35,12 @@ knowledge/
 |-------|-------------|
 | {topic} | {description} |
 
+**For architecture.md specifically:**
+| Topic | Description |
+|-------|-------------|
+| Project Overview | What this project is, who it's for, what problem it solves |
+| Implementation Status | Feature completion status, known limitations |
+
 ## Knowledge Recall Triggers
 
 | Keyword | Target |
@@ -47,7 +53,7 @@ knowledge/
 - `{doc-name}` — Human readable name (e.g., "Architecture Knowledge")
 - `{doc-file}` — File name (e.g., `architecture.md`)
 - `{topic}/{description}` — One row per major section in the document
-- `{keyword}/{file}` — Minimum 4 trigger entries
+- `{keyword}/{file}` — Minimum 6 trigger entries (including architecture overview and implementation status)
 
 ---
 
@@ -78,7 +84,7 @@ knowledge/
 | **Source** | {file path} |
 ```
 
-**Numbering rules:** 001~009 Code Location, 010~019 Business Terms, 020~029 Tech Decisions, 030~039 Common Traps, 040~049 Project Standards.
+**Numbering rules:** 001~003 Project Overview, 004~012 Code Location, 013~022 Business Terms, 023~032 Tech Decisions, 033~036 Implementation Status, 037~046 Common Traps, 047~056 Project Standards.
 
 ---
 
@@ -120,6 +126,9 @@ knowledge/
 ```markdown
 # Architecture Knowledge
 
+## 0. Project Overview
+{what the project is, target users, core interaction model}
+
 ## 1. Project Structure
 ```
 {project directory tree}
@@ -134,6 +143,14 @@ knowledge/
 | Decision | Options | Chosen | Rationale |
 |----------|---------|--------|-----------|
 | {decision} | {options} | {chosen} | {rationale} |
+
+## 4. Implementation Status
+| Dimension | Status | Description |
+|-----------|--------|-------------|
+| {feature} | {Complete / Partial / Not started} | {description} |
+
+### Known Limitations
+1. {limitation}
 ```
 
 ### api-design.md.tmpl
