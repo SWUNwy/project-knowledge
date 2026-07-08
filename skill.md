@@ -1,5 +1,5 @@
 ---
-name: "project-knowledge"
+name: "project-analyzer"
 description: "自动分析任意工程项目并生成完整的 .claude/knowledge/ 知识库目录结构（INDEX.md + points.md + term-mapping.md + kbase/*.md）。当用户提到「建立知识库」、「初始化 knowledge」、「分析项目架构」、「生成知识目录」、「整理开发规范」时触发。支持指定目标路径或分析当前工作目录。"
 ---
 
@@ -82,7 +82,8 @@ project_analyze_state:
     ├── architecture.md     # 架构知识
     ├── api-design.md       # API 设计知识
     ├── database.md         # 数据库知识
-    └── frontend.md         # 前端知识（如适用）
+    ├── frontend.md         # 前端知识（如适用）
+    └── workflow.md         # 开发工作流（如适用）
 ```
 
 **路径规则：**
